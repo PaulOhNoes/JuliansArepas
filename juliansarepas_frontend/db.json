@@ -23,7 +23,44 @@
       "name": "Blanca",
       "quanity": 12,
       "accepted": false
+    },
+    {
+      "id": 5,
+      "name": "Jamie",
+      "quanity": "12",
+      "accepted": true
+    },
+    {
+      "id": 6,
+      "name": "Jake",
+      "quanity": "12",
+      "accepted": true
+    },
+    {
+      "id": 7,
+      "name": "Peter",
+      "quanity": 1,
+      "accepted": true
     }
   ],
-  "workOrders": []
+  "workOrders": [
+    {
+      "id": 7,
+      "name": "Peter",
+      "quanity": 1,
+      "accepted": true
+    },
+    {
+      "id": 6,
+      "name": "Jake",
+      "quanity": "12",
+      "accepted": true
+    },
+    {
+      "id": 5,
+      "name": "Jamie",
+      "quanity": "12",
+      "accepted": true
+    }
+  ]
 }
