@@ -1,9 +1,29 @@
 {
-  "orders":[
+  "orders": [
     {
       "id": 1,
-      "name": "james",
-      "quanity": 2
+      "name": "James",
+      "quanity": 2,
+      "accepted": false
+    },
+    {
+      "id": 2,
+      "name": "Paul",
+      "quanity": 4,
+      "accepted": false
+    },
+    {
+      "id": 3,
+      "name": "Julian",
+      "quanity": 10,
+      "accepted": false
+    },
+    {
+      "id": 4,
+      "name": "Blanca",
+      "quanity": 12,
+      "accepted": false
     }
-  ]
+  ],
+  "workOrders": []
 }
