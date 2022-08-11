@@ -12,14 +12,17 @@ const OrderList = ({orders}) => {
   }
 
   return(
-    <div>
-      <h1>Order Requests</h1>
-      <ul>
-        {orders.map((order) => 
-          <Order key={order.id} name={order.name} quanity={order.quanity} accepted={order.accepted} toggleAccepted={() => toggleAccepted(order)}/> 
-        )}
-      </ul>
+    <div className='row justify-content-center'>
+      <div className='col-4'>
+        <h2>Order Requests</h2>
+        <ul className='text-start'>
+          {orders.map((order) => 
+            <Order key={order.id} name={order.name} quanity={order.quanity} accepted={order.accepted} toggleAccepted={() => toggleAccepted(order)}/> 
+          )}
+        </ul>
+      </div>
     </div>
+    
   )
 }
 

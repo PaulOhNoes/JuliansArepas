@@ -13,19 +13,21 @@ const OrderForm = () => {
     dispatch(createOrder(name, Number(quanity)))
   }
   return (
-    <div>
-      <h1>Create an Order</h1>
-      <form onSubmit={addNewOrder}>
-        <div>
-          name: <input name='name'/>
-        </div>
-        <div>
-          quanity: <input name='quanity' /> 
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+    <div className='row justify-content-center'>
+      <div className='col-4'>
+        <h2>Create an Order</h2>
+        <form className='text-start'onSubmit={addNewOrder}>
+          <div>
+            Name: <input name='name'/>
+          </div>
+          <div>
+            Quanity: <input name='quanity' /> 
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }

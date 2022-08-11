@@ -12,14 +12,17 @@ const WorkOrderList = ({workOrders}) => {
     dispatch(removeWorkOrder(workOrder.id))
   }
   return(
-    <div>
-      <h1>Work Orders</h1>
-        <ul>
-        {workOrders.map((workOrder) => 
-            <WorkOrder key={workOrder.id} name={workOrder.name} quanity={workOrder.quanity} toggleRejected={() => toggleRejected(workOrder)}/>
-          )}
-        </ul>
+    <div className='row justify-content-center'>
+      <div className='col-4'>
+        <h2>Work Orders</h2>
+          <ul className='text-start'>
+          {workOrders.map((workOrder) => 
+              <WorkOrder key={workOrder.id} name={workOrder.name} quanity={workOrder.quanity} toggleRejected={() => toggleRejected(workOrder)}/>
+            )}
+          </ul>
+      </div>
     </div>
+    
   )
 }
 
