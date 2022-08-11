@@ -1,4 +1,29 @@
-const OrderList = ({ name, quanity, toggleRejected}) => {
+import { useDispatch } from 'react-redux/es/exports'
+import { updateOrder } from '../reducers/orderReducer'
+import { removeWorkOrder } from '../reducers/workOrderReducer'
+
+const WorkOrderList = ({workOrders}) => {
+  const dispatch = useDispatch()
+
+  const toggleRejected = (workOrder) => {
+    const updatedWorkOrder = {...workOrder, accepted: !workOrder.accepted}
+    
+    dispatch(updateOrder(workOrder.id, updatedWorkOrder))
+    dispatch(removeWorkOrder(workOrder.id))
+  }
+  return(
+    <div>
+      <h1>Work Orders</h1>
+        <ul>
+        {workOrders.map((workOrder) => 
+            <WorkOrder key={workOrder.id} name={workOrder.name} quanity={workOrder.quanity} toggleRejected={() => toggleRejected(workOrder)}/>
+          )}
+        </ul>
+    </div>
+  )
+}
+
+const WorkOrder = ({ name, quanity, toggleRejected}) => {
   let displayAccept = {
           display: 'Reject',
           style: 'btn btn-danger btn-sm'
@@ -9,4 +34,4 @@ const OrderList = ({ name, quanity, toggleRejected}) => {
   )
 }
 
-export default OrderList
+export default WorkOrderList
