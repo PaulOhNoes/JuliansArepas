@@ -1,65 +1,29 @@
 {
   "orders": [
     {
-      "id": 1,
-      "name": "James",
-      "quanity": 2,
-      "accepted": false
-    },
-    {
-      "id": 2,
       "name": "Paul",
-      "quanity": 4,
-      "accepted": false
-    },
-    {
-      "id": 3,
-      "name": "Julian",
-      "quanity": 10,
-      "accepted": false
-    },
-    {
-      "id": 4,
-      "name": "Blanca",
       "quanity": 12,
-      "accepted": false
-    },
-    {
-      "id": 5,
-      "name": "Jamie",
-      "quanity": "12",
+      "id": 929495,
       "accepted": true
     },
     {
-      "id": 6,
-      "name": "Jake",
-      "quanity": "12",
-      "accepted": true
-    },
-    {
-      "id": 7,
-      "name": "Peter",
-      "quanity": 1,
+      "name": "Julian",
+      "quanity": 213,
+      "id": 267497,
       "accepted": true
     }
   ],
   "workOrders": [
     {
-      "id": 7,
-      "name": "Peter",
-      "quanity": 1,
+      "name": "Paul",
+      "quanity": 12,
+      "id": 929495,
       "accepted": true
     },
     {
-      "id": 6,
-      "name": "Jake",
-      "quanity": "12",
-      "accepted": true
-    },
-    {
-      "id": 5,
-      "name": "Jamie",
-      "quanity": "12",
+      "name": "Julian",
+      "quanity": 213,
+      "id": 267497,
       "accepted": true
     }
   ]
